@@ -4,7 +4,7 @@ import clsx from "clsx";
 interface BoundedProps {
   as?: ElementType;
   className?: string;
-  children?: React.ReactNode;
+  children?: React.ReactNode | React.ReactNode[];
   [key: string]: any; // For rest props
 }
 
