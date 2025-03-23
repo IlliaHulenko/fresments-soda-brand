@@ -1,22 +1,26 @@
-import React, { ElementType, ReactNode } from "react";
 import clsx from "clsx";
+import { ESLINT_DEFAULT_DIRS } from "next/dist/lib/constants";
 
-interface BoundedProps {
-  as?: ElementType;
-  className?: string; 
-  children?: ReactNode; 
-}
+type BoundedProps = {
+  as?: React.ElementType;
+  className?: string;
+  children: React.ReactNode;
+};
 
-export const Bounded = ({
-  as: Component = "section",
+export const Bounded: React.FC<BoundedProps> = ({
+  as: Comp = "section",
   className,
   children,
-}: BoundedProps) => {
+  ...restProps
+}) => {
   return (    
-    <Component className={clsx("px-4 first:pt-10 md:px-6", className)}>
+    <Comp
+      className={clsx("px-4 first:pt-10 md:px-6", className as string)}
+      {...restProps}
+    >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
         {children}
       </div>
-    </Component>
+    </Comp>
   );
 };
