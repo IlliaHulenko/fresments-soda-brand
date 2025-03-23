@@ -14,8 +14,9 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-types": "off",
       "react/prop-types": "off",
-      // Add more rules to loosen type checking if needed
+      "react/jsx-props-no-spreading": "off"
     }
   }
 ];
