@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/alpino_4e2b2d4d.module.css"],"sourcesContent":["@font-face {\n    font-family: 'alpino';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22../../public/fonts/Alpino-Variable.woff2%22,%22preload%22:true,%22has_size_adjust%22:true}') format('woff2');\n    font-display: swap;\n    font-weight: 100 900;\n}\n\n@font-face {\n    font-family: 'alpino Fallback';\n    src: local(\"Arial\");\n    ascent-override: 102.69%;\ndescent-override: 30.81%;\nline-gap-override: 9.24%;\nsize-adjust: 97.38%;\n\n}\n\n.className {\n    font-family: 'alpino', 'alpino Fallback';\n    \n}\n.variable {\n    --font-alpino: 'alpino', 'alpino Fallback';\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;;AAUA;;;;AAIA"}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
