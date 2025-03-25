@@ -140,7 +140,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
                     ref={canRef}
                     flavor={flavor}
                     rotationIntensity={0}
-                    floatIntensity={3}
+                    floatIntentsity={3}
                     floatSpeed={3}
                 >
                     <pointLight intensity={30} color="#8C0413" decay={0.6} />

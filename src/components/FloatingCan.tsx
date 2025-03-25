@@ -11,7 +11,7 @@ type FloatingCanProps = {
     rotationIntensity?: number;
     floatIntentsity?: number;
     floatingRange?: [number, number];
-    shildren?: React.ReactNode;
+    children?: React.ReactNode;
 };
 
 const FloatingCan = forwardRef<Group, FloatingCanProps>(
@@ -21,7 +21,7 @@ const FloatingCan = forwardRef<Group, FloatingCanProps>(
         rotationIntensity = 1,
         floatIntentsity = 1,
         floatingRange = [-.1, .1],
-        shildren,
+        children,
         ...props
     }, ref ) => {
         return (
@@ -32,7 +32,7 @@ const FloatingCan = forwardRef<Group, FloatingCanProps>(
                     floatIntensity={floatIntentsity} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
                     floatingRange={floatingRange} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
                 >
-                    {shildren}
+                    {children}
                     <SodaCan flavor={flavor}/>                    
                 </Float>
             </group>
