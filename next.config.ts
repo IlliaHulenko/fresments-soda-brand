@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  output: "export",
+const nextConfig: NextConfig = {  
   trailingSlash: true,
   reactStrictMode: false,
   // If you're using any dynamic routes or API routes, you might need to add:
